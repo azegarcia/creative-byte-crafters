@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Creative Byte Crafters</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/logo.png"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+	<div class="simpleslide100">
+		<div class="simpleslide100-item bg-img1" style="background-image: url('images/bg01.jpg');"></div>
+	</div>
+	<div class="flex-col-c-sb size1 overlay1 p-l-30 p-r-75 p-t-20 p-b-40 p-lr-15-sm">
+		<div class="w-full flex-w flex-sb-m">
+			<div class="wrappic1 m-r-10 m-t-10 m-b-10">
+				<img src="images/icons/logo.png" alt="LOGO"><b style="color: white;"> Creative Byte Crafters</b>
+			</div>
+			<div class="flex-w flex-c-m m-t-10 m-b-10">
+				<a href="https://www.facebook.com/profile.php?id=61555951363822" class="size3 flex-c-m how-social trans-04 m-r-3 m-l-3 m-b-3 m-t-3">
+					<i class="fa fa-facebook"></i>
+                </a>
+				<a href="https://www.instagram.com/creativebytecrafters?igsh=YjJ6OHp1M25ob2po&utm_source=qr" class="size3 flex-c-m how-social trans-04 m-r-3 m-l-3 m-b-3 m-t-3">
+					<i class="fa fa-instagram"></i>
+				</a>
+			</div>
+		</div>
+		<div style="margin-bottom: 50px;">
+			<h3 class="l1-txt2 txt-center respon1">
+				Coming Soon!
+			</h3>
+		</div>
+        <div>
+            <video width="600" height="350" controls>
+                <source src="videos/intro.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video> 
+        </div>
+        <br>
+        <br>
+	</div>
+<!--===============================================================================================-->	
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+    <script type="module">
+		// Import the functions you need from the SDKs you need
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-app.js";
+		import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-analytics.js";
+		// TODO: Add SDKs for Firebase products that you want to use
+		// https://firebase.google.com/docs/web/setup#available-libraries
+	  
+		// Your web app's Firebase configuration
+		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+		const firebaseConfig = {
+		  apiKey: "AIzaSyAZPpmvoD5aHzIA96HyCLJ8AidIcRn9oC8",
+		  authDomain: "creative-byte.firebaseapp.com",
+		  projectId: "creative-byte",
+		  storageBucket: "creative-byte.appspot.com",
+		  messagingSenderId: "611950269311",
+		  appId: "1:611950269311:web:4cb3f386df51e9d91d404a",
+		  measurementId: "G-L6EFQ15FPT"
+		};
+		// Initialize Firebase
+		const app = initializeApp(firebaseConfig);
+		const analytics = getAnalytics(app);
+	</script>
+</body>
+</html>
